@@ -1,0 +1,31 @@
+.container__home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border-top: solid 1px #FFFFFF;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.container__home-title > h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container__home-title {
+        width: 24rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 1px #FFFFFF;
+        border-bottom: solid 1px #FFFFFF;
+    }
+    
+    .container__home-title > h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+}

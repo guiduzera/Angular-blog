@@ -1,0 +1,27 @@
+<header>
+  <app-menu-bar></app-menu-bar>
+</header>
+<app-home-title></app-home-title>
+<div class="container__articles">
+  <div class="container__main-article">
+    <app-big-card
+      cardDate="{{ mainPost.date }}"
+      imgUrl="{{ mainPost.imgUrl }}"
+      cardTitle="{{ mainPost.title }}"
+      cardDescription="{{ mainPost.description }}"
+      cardId="{{ mainPost.id }}"
+    ></app-big-card>
+  </div>
+  <div class="container__secondary-articles">
+    <app-small-card
+      *ngFor="let post of data"
+      imgUrl="{{ post.imgUrl }}"
+      smallCardTitle="{{ post.title }}"
+      smallCardDate="{{ post.date }}"
+      smallCardId="{{ post.id }}"
+    ></app-small-card>
+  </div>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>

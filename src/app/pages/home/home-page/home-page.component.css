@@ -1,0 +1,40 @@
+.container__articles {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.container__main-article {
+    width: 50%;
+    height: 40rem;
+}
+
+.container__secondary-articles {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    width: 50%;
+    height: 40rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container__articles {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .container__main-article {
+        width: 24rem;
+        height: 40rem;
+    }
+    
+    .container__secondary-articles {
+        gap: 3rem;
+        padding: 0;
+        width: 24rem;
+        height: 100%;
+    }
+}
